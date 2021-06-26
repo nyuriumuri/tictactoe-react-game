@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tictactoe-react-game/static/css/main.91d4fe17.chunk.css",
+    "main.js": "/tictactoe-react-game/static/js/main.2bd7bd8d.chunk.js",
+    "main.js.map": "/tictactoe-react-game/static/js/main.2bd7bd8d.chunk.js.map",
+    "runtime-main.js": "/tictactoe-react-game/static/js/runtime-main.e4c52083.js",
+    "runtime-main.js.map": "/tictactoe-react-game/static/js/runtime-main.e4c52083.js.map",
+    "static/js/2.3ac94901.chunk.js": "/tictactoe-react-game/static/js/2.3ac94901.chunk.js",
+    "static/js/2.3ac94901.chunk.js.map": "/tictactoe-react-game/static/js/2.3ac94901.chunk.js.map",
+    "static/js/3.5dfa9726.chunk.js": "/tictactoe-react-game/static/js/3.5dfa9726.chunk.js",
+    "static/js/3.5dfa9726.chunk.js.map": "/tictactoe-react-game/static/js/3.5dfa9726.chunk.js.map",
+    "index.html": "/tictactoe-react-game/index.html",
+    "static/css/main.91d4fe17.chunk.css.map": "/tictactoe-react-game/static/css/main.91d4fe17.chunk.css.map",
+    "static/js/2.3ac94901.chunk.js.LICENSE.txt": "/tictactoe-react-game/static/js/2.3ac94901.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e4c52083.js",
+    "static/js/2.3ac94901.chunk.js",
+    "static/css/main.91d4fe17.chunk.css",
+    "static/js/main.2bd7bd8d.chunk.js"
+  ]
+}
