@@ -1,0 +1,14 @@
+.block-button{
+	background-color: #212529;
+	color:white;
+    height:200px;
+    width:200px;
+	font-size: x-large;
+}
+.block-button.X{
+	background-color: #23DEEB;
+}
+
+.block-button.O{
+	background-color: #EB5F00;
+}
