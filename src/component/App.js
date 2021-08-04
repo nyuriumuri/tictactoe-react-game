@@ -1,6 +1,7 @@
 import React from "react";
 import StartScreen from "./StartScreen"
 import Board from "./Board"
+import "./App.css"
 export default class App extends React.Component{
 	constructor(props){
 		super(props);
@@ -40,18 +41,20 @@ export default class App extends React.Component{
 	render(){
 		if(this.state.mode!==1){
 			return(
-				<div className="container bg-dark">
+
 						<StartScreen clickHandler={this.setupTwoPlayers} ai_clickHandler={this.setupAI}></StartScreen>
-				</div>
+
 			);
 		}
 		else{
 			return(
-				<div className="container bg-dark">
-					<div className="row">
+				<div>
+				<div>
 						<Board ai_game={this.state.ai_game} ai_turn={this.state.ai_turn}></Board>
-					</div>
-					<button className="row" onClick={()=>this.setMode(0)}>Start Screen</button>
+				</div>
+				<div>
+					<button className="HomeButton" onClick={()=>this.setMode(0)}>Start Screen</button>
+				</div>
 				</div>
 			);
 		}

@@ -1,3 +1,38 @@
-.container{
-	grid-template-columns: 1fr 1fr;
+.StartScreen{
+	display:flex;
+	background-color: #5ce841;
+
+min-height: 100%;
+display: flex;
+width: 100%;
+height: 100vh;
+flex-direction: row;
+
+}
+
+.StartButton-L{
+	background-color:  #23DEEB;
+	width:50%;
+	height: 100%;
+	text-align: center;
+	text-justify: center;
+	padding-top: 50vh;
+	font-family: fantasy;
+	font-weight: bolder;
+	font-size: 7rem;
+	color: rgb(255, 255, 255);
+}
+.StartButton-R{
+	background-color:   #EB5F00;
+
+	width:50%;
+	height: 100%;
+	text-align: center;
+	text-justify: center;
+	padding-top: 50vh;
+	font-family: fantasy;
+	font-weight: bolder;
+	font-size: 7rem;
+	color: rgb(255, 255, 255);
+
 }
