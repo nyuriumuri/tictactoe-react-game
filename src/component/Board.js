@@ -2,6 +2,8 @@ import React from 'react';
 import Block from './Block';
 import getAIMove from "./AI";
 import "./Board.css";
+import { HiHome } from "react-icons/hi";
+import { VscDebugRestart } from "react-icons/vsc";
 export default class Board extends React.Component{
 	constructor(props){
 		super(props);
@@ -141,7 +143,16 @@ export default class Board extends React.Component{
 		return(
 			// <div class="d-flex align-items-center justify-content-around">
 			<div className="Board">
-				<div class="d-flex align-items-center flex-column">
+			<div class="d-flex align-items-center align-content-around flex-row w-100 justify-content-around flex-wrap">
+			<div class="d-flex align-items-startflex-row">
+	   			 		<button type="button" class="btn btn-secondary m-4 p-4 h-100" onClick={()=>this.resetGame()}>
+								<VscDebugRestart></VscDebugRestart>
+							</button>
+						<button type="button" class="btn btn-secondary m-4 p-4" onClick={()=>this.props.reset()}>
+							<HiHome></HiHome>
+						</button>
+	   		</div>
+				<div class="d-flex align-items-center flex-column margins">
 				 	<div class="d-flex align-items-center flex-row">
 				 		<Block index="0" handleClick={this.blockClick} ai_game={this.state.ai_game} current_turn={this.state.player} ai_turn={this.state.ai_turn} value={this.state.board[0]} disable={this.state.gameOver  || this.state.ai_is_playing || this.state.board[0]}></Block>
 			 			<Block index="1" handleClick={this.blockClick} ai_game={this.state.ai_game} current_turn={this.state.player} ai_turn={this.state.ai_turn} value={this.state.board[1]} disable={this.state.gameOver  || this.state.ai_is_playing || this.state.board[1]}></Block>
@@ -157,13 +168,12 @@ export default class Board extends React.Component{
 						<Block index="7" handleClick={this.blockClick} ai_game={this.state.ai_game} current_turn={this.state.player} ai_turn={this.state.ai_turn} value={this.state.board[7]} disable={this.state.gameOver  || this.state.ai_is_playing || this.state.board[7]}></Block>
 						<Block index="8" handleClick={this.blockClick} ai_game={this.state.ai_game} current_turn={this.state.player} ai_turn={this.state.ai_turn} value={this.state.board[8]} disable={this.state.gameOver  || this.state.ai_is_playing || this.state.board[8]}></Block>
 				 	</div>
-					<div class="d-flex align-items-center flex-row">
-	   			 		<button onClick={()=>this.resetGame()}>Reset Game</button>
-	   			 	</div>
+					
 				</div>
-				<div class="d-flex align-items-center justify-content-center flex-row">
+				<div  class="margins winner">
    			 		<h1>{wintext}</h1>
    			 	</div>
+				</div>
 			 </div>
 
 		)

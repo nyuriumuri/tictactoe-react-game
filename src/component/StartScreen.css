@@ -10,29 +10,40 @@ flex-direction: row;
 
 }
 
-.StartButton-L{
-	background-color:  #23DEEB;
-	width:50%;
-	height: 100%;
+
+
+
+.StartButton {
+	display: flex;
+	width: 50vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 	text-justify: center;
-	padding-top: 50vh;
 	font-family: fantasy;
 	font-weight: bolder;
-	font-size: 7rem;
+	font-size: 5vmax;
 	color: rgb(255, 255, 255);
 }
-.StartButton-R{
-	background-color:   #EB5F00;
 
-	width:50%;
-	height: 100%;
-	text-align: center;
-	text-justify: center;
-	padding-top: 50vh;
-	font-family: fantasy;
-	font-weight: bolder;
-	font-size: 7rem;
-	color: rgb(255, 255, 255);
+.L {
+	background-color:  #23DEEB;
+
+}
+.R{
+	background-color:   #EB5F00;
+}
+
+@media (max-width: 640px) { 
+
+	.StartScreen{
+		flex-direction: column;
+	}
+
+	.StartButton{
+		width: 100vw;
+		height: 50vh;
+	}
 
 }

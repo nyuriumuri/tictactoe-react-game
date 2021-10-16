@@ -48,14 +48,11 @@ export default class App extends React.Component{
 		}
 		else{
 			return(
+				
 				<div>
-				<div>
-						<Board ai_game={this.state.ai_game} ai_turn={this.state.ai_turn}></Board>
+						<Board ai_game={this.state.ai_game} ai_turn={this.state.ai_turn} reset={()=>this.setMode(0)}></Board>
 				</div>
-				<div>
-					<button className="HomeButton" onClick={()=>this.setMode(0)}>Start Screen</button>
-				</div>
-				</div>
+			
 			);
 		}
 	}
